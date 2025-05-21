@@ -7,8 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dao\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Data.SqlClient.SNI" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Data.SqlClient.SNI.runtime" Version="6.0.2" />
   </ItemGroup>
 
 </Project>

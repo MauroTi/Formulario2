@@ -23,6 +23,12 @@ namespace Formulario2.Controllers
             return View();
         }
 
+        public IActionResult TestarConexao()
+        {
+            // lógica de teste de conexão
+            return Content("Conexão OK");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

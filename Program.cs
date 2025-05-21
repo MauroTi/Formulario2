@@ -23,4 +23,18 @@ app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
 
+app.UseStaticFiles();
+
+app.Run();
+
+// Ativa authentication/authorization, se houver
+// app.UseAuthentication();
+// app.UseAuthorization();
+
+// Mapeia rotas de controllers
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+);
+
 app.Run();
